@@ -1,0 +1,145 @@
+import java.io.*;
+public class day
+{
+public static void main(String args[])throws IOException
+{
+InputStreamReader read=new InputStreamReader(System.in);
+BufferedReader in=new BufferedReader(read);
+int a,s,y,p,x,z,b,c,d,e,f,g,h,m,i,da,mn,n,j,l,k,o;a=0;o=0;j=0;z=0;
+System.out.println("enter the year u born");
+s=Integer.parseInt(in.readLine());
+y=0;
+y=s-1;
+p=0;
+p=y/400;
+x=0;
+x=y-(p*400);
+{
+if(x>=100&&x<=199)
+{
+z=5;a=x-100;
+}
+if(x>=200&&x<=299)
+{
+z=3;a=x-200;
+}
+if(x>=300&&x<=399)
+{
+z=1;a=x-300;
+}}
+{
+b=0;
+b=a/4;
+c=0;
+c=b/7;
+d=0;
+d=b-(c*7);
+e=0;
+e=a/7;
+f=0;
+f=a-(e*7);
+j=f+d+z;
+}
+System.out.println("enter the   month in number form u born");
+m=Integer.parseInt(in.readLine());
+{
+g=0;
+g=s/400;
+o=s-(g*400);
+if(o==0)
+{
+i=1;
+}
+else
+{i=0;
+}}
+int F=i;
+System.out.println("enter the date u born");
+da=Integer.parseInt(in.readLine());
+mn=0;
+mn=da/7;
+h=0;
+h=da-(mn*7);n=0;
+if(m==1)
+{
+n=(da-(mn*7))+j;
+}
+if(m==2)
+{
+n=3+h+j;
+}
+if(m==3)
+{
+n=3+F+h+j;
+}
+if(m==4)
+{
+n=6+F+h+j;
+}
+if(m==5)
+{
+n=8+F+h+j;
+}
+if(m==6)
+{
+n=11+F+h+j;
+}
+if(m==7)
+{
+n=13+F+h+j;
+}
+if(m==8)
+{
+n=16+F+h+j;
+}
+if(m==9)
+{
+n=19+F+h+j;
+}
+if(m==10)
+{
+n=21+F+h+j;
+}
+if(m==11)
+{
+n=24+F+h+j;
+}
+if(m==12)
+{
+n=26+F+h+j;
+}
+{
+k=n/7;
+l=n-(k*7);
+if(l==0)
+{
+System.out.println("you born on sunday");
+}
+if(l==1)
+{
+System.out.println("you born on monday");
+}
+if(l==2)
+{
+System.out.println("you born on tuesday");
+}
+if(l==3)
+{
+System.out.println("you born on wednesday");
+}
+if(l==4)
+{
+System.out.println("you born on thursday");
+}
+if(l==5)
+{
+System.out.println("you born on friday");
+}
+if(l==6)
+{
+System.out.println("you born on saturday");
+}
+}}}
+
+
+    
